@@ -11,6 +11,7 @@ if (!COSMIC_BUCKET_SLUG) {
 export const cosmic = createBucketClient({
   bucketSlug: COSMIC_BUCKET_SLUG,
   readKey: COSMIC_READ_KEY,
+  apiEnvironment: "staging"
 });
 
 // Helper for handling errors
